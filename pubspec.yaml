@@ -40,6 +40,7 @@ dependencies:
   flutter_bloc: ^8.1.2
   cached_network_image: ^3.2.3
   webview_flutter: ^4.2.1
+  icons_launcher: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -93,3 +94,24 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+icons_launcher:
+  image_path: "assets/icon.png"
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/icon.png"
+    ios:
+      enable: true
+      image_path: "assets/icon.png"
+    web:
+      enable: true
+      image_path: "assets/icon.png"
+    macos:
+      enable: true
+      image_path: "assets/icon.png"
+    windows:
+      enable: true
+      image_path: "assets/icon.png"
+    linux:
+      enable: true
+      image_path: "assets/icon.png"

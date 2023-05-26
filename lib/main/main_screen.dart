@@ -28,7 +28,7 @@ class MainScreen extends StatelessWidget {
                       child: GridView.count(
                           physics: const BouncingScrollPhysics(),
                           crossAxisCount: 2,
-                          childAspectRatio: 1 / 1.4,
+                          childAspectRatio: 1 / 1.5,
                           children: List.generate(
                               cubit.planets.length,
                               (index) =>
@@ -49,22 +49,31 @@ Widget planetItem(Planet planet, BuildContext context) {
       clipBehavior: Clip.antiAliasWithSaveLayer,
       child: Column(
         children: [
-          CachedNetworkImage(
-            fit: BoxFit.cover,
-            width: 200,
-            height: 200,
-            imageUrl: planet.imgSrc.img,
-            placeholder: (context, url) =>
-                const Image(image: AssetImage("assets/images/placeholder.jpg")),
-            errorWidget: (context, url, error) => const Icon(Icons.error),
+          Expanded(
+            flex: 6,
+            child: CachedNetworkImage(
+              fit: BoxFit.cover,
+              width:double.infinity ,
+              imageUrl: planet.imgSrc.img,
+              placeholder: (context, url) =>
+                  const Image(image: AssetImage("assets/images/placeholder.jpg"), fit: BoxFit.cover,
+                    width:double.infinity ,),
+              errorWidget: (context, url, error) => const Icon(Icons.error),
+            ),
           ),
-          Text(
-            planet.planetOrder.toString(),
-            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.only(top:8.0),
+            child: Text(
+              planet.planetOrder.toString(),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
           ),
-          Text(
-            planet.name,
-            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8.0),
+            child: Text(
+              planet.name,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
           )
         ],
       ),

@@ -19,6 +19,8 @@ class DetailsScreen extends StatelessWidget {
         child: Column(
           children: [
             CachedNetworkImage(
+              fit: BoxFit.cover,
+              width: double.infinity,
               imageUrl: planet.imgSrc.img,
               placeholder: (context, url) => const Image(
                   image: AssetImage("assets/images/placeholder.jpg")),
