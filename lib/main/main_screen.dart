@@ -53,16 +53,18 @@ Widget planetItem(Planet planet, BuildContext context) {
             flex: 6,
             child: CachedNetworkImage(
               fit: BoxFit.cover,
-              width:double.infinity ,
+              width: double.infinity,
               imageUrl: planet.imgSrc.img,
-              placeholder: (context, url) =>
-                  const Image(image: AssetImage("assets/images/placeholder.jpg"), fit: BoxFit.cover,
-                    width:double.infinity ,),
+              placeholder: (context, url) => const Image(
+                image: AssetImage("assets/images/placeholder.jpg"),
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
               errorWidget: (context, url, error) => const Icon(Icons.error),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top:8.0),
+            padding: const EdgeInsets.only(top: 8.0),
             child: Text(
               planet.planetOrder.toString(),
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

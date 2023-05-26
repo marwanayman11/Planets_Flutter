@@ -23,12 +23,14 @@ class DetailsScreen extends StatelessWidget {
               width: double.infinity,
               imageUrl: planet.imgSrc.img,
               placeholder: (context, url) => const Image(
-                  image: AssetImage("assets/images/placeholder.jpg")),
+                image: AssetImage("assets/images/placeholder.jpg"),
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
               errorWidget: (context, url, error) => const Icon(Icons.error),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(right: 8.0, left: 8.0,top: 8.0),
+              padding: const EdgeInsets.only(right: 8.0, left: 8.0, top: 8.0),
               child: Card(
                 child: ListTile(
                   title: const Text(
@@ -40,8 +42,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(right: 8.0, left: 8.0,top: 8.0),
+              padding: const EdgeInsets.only(right: 8.0, left: 8.0, top: 8.0),
               child: Card(
                 child: ListTile(
                   title: const Text(
@@ -53,8 +54,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(right: 8.0, left: 8.0,top: 8.0),
+              padding: const EdgeInsets.only(right: 8.0, left: 8.0, top: 8.0),
               child: Card(
                 child: ListTile(
                   title: const Text(
@@ -66,8 +66,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(right: 8.0, left: 8.0,top: 8.0),
+              padding: const EdgeInsets.only(right: 8.0, left: 8.0, top: 8.0),
               child: Card(
                 child: ListTile(
                   title: const Text(
@@ -79,8 +78,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.only(right: 8.0, left: 8.0,top: 8.0),
+              padding: const EdgeInsets.only(right: 8.0, left: 8.0, top: 8.0),
               child: Card(
                 child: ListTile(
                   title: const Text(

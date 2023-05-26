@@ -485,6 +485,13 @@
             </list>
           </value>
         </entry>
+        <entry key="window_size">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/git/flutter-desktop-embedding-6c66ad23ee79749f30a8eece542cf54eaf157ed8/plugins/window_size/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="xdg_directories">
           <value>
             <list>
@@ -512,6 +519,7 @@
       <root url="file://$PROJECT_DIR$/../../flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter/packages/flutter/lib" />
       <root url="file://$PROJECT_DIR$/../../flutter/packages/flutter_test/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/git/flutter-desktop-embedding-6c66ad23ee79749f30a8eece542cf54eaf157ed8/plugins/window_size/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/archive-3.3.7/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.4.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0/lib" />
